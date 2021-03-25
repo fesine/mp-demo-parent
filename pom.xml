@@ -19,6 +19,7 @@
 
   <modules>
     <module>first</module>
+    <module>crud</module>
   </modules>
 
   <dependencyManagement>
