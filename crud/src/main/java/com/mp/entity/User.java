@@ -51,4 +51,12 @@ public class User {
      * 创建时间
      */
     private LocalDateTime createTime;
+
+    /**
+     * 备注
+     * 使用exist = false 忽略表中不存在的列
+     * 其他使用static或transient修饰属性也可以实现
+     */
+    @TableField(exist = false)
+    private String remark;
 }

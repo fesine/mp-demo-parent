@@ -28,10 +28,11 @@ public class CrudTest {
     @Test
     public void insert(){
         User user = new User();
-        user.setRealName("向风");
+        user.setRealName("向水");
         user.setAge(30);
         user.setManagerId(1088248166370832385L);
         user.setCreateTime(LocalDateTime.now());
+        user.setRemark("这是一个备注字段");
         int rows = userMapper.insert(user);
         System.out.println("影响行数："+rows);
     }
